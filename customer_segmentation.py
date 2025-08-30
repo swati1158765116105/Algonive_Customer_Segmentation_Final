@@ -31,8 +31,10 @@ sns.scatterplot(
 plt.title("Customer Segmentation")
 plt.show()
 
+
 os.makedirs("output", exist_ok=True)
 df.to_csv("output/customer_segments.csv",index=False)
+
 
 # EDA Visualizations
 sns.histplot(df['Age'], bins=20,kde=True,color="skyblue")
